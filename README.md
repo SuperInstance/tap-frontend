@@ -112,7 +112,7 @@ The Tap frontend IS the bar's facade, the way [Plato's Shell](https://github.com
 - **[Plato's Shell](https://github.com/SuperInstance/platos-shell)** — The ship. The bar-rail room IS this bar.
 - **[MUD Engine](https://github.com/SuperInstance/mud-engine)** — The core. Hermit-crab, agent-runtime, event-bus.
 - **[ScummVM Prototype](https://github.com/SuperInstance/scummvm-prototype)** — The first playable. Same rooms, simpler interface.
-- **[Officers' Quarters](https://github.com/SuperInstance/officers-quarters)** — Phaser game client with the same vibe protocol.
+- **[Officers' Quarters](https://github.com/SuperInstance/elephant)** — Phaser game client with the same vibe protocol.
 - **[Spatial Registry](https://github.com/SuperInstance/spatial-registry)** — The topology connecting all rooms.
 - **[Fleet Radio](https://github.com/SuperInstance/fleet-radio)** — Broadcasting from the radio room next door.
 - **[Fleet Envelope](https://github.com/SuperInstance/fleet-envelope)** — Event grammar wrapping every message.
@@ -120,8 +120,8 @@ The Tap frontend IS the bar's facade, the way [Plato's Shell](https://github.com
 - **[Dual Band Guard](https://github.com/SuperInstance/dual-band-guard)** — Safety filtering for the bar's content.
 - **[AI Writings](https://github.com/SuperInstance/AI-Writings/tree/main/prose)** — Stories set in these rooms.
 - **[Vibe Protocol](https://github.com/SuperInstance/vibe-protocol)** — Vibes → signals. How rooms feel.
-- **[Fleet Wiki](https://github.com/SuperInstance/fleet-wiki)** — 700+ pages of fleet lore.
-- **[Wesley's Journal](https://github.com/SuperInstance/wesley-journal)** — Wesley's bar stories.
+- **[Fleet Wiki](https://github.com/SuperInstance/lucineer-fleet-wiki)** — 700+ pages of fleet lore.
+- **[Wesley's Journal](https://github.com/SuperInstance/wesley-journal) (dead)** — Wesley's bar stories.
 - **[Collective Unconscious](https://github.com/SuperInstance/collective-unconscious)** — Shared substrate beneath the conversation.
 - **[Confidence Cascade](https://github.com/SuperInstance/confidence-cascade)** — Multi-model verification for agent dialogue.
 
