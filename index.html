@@ -1029,7 +1029,7 @@
         let tideInfo = '';
         if (latestTime) {
           const ago = timeAgo(latestTime);
-          tideInfo = `last voice: ${ago} ago`;
+          tideInfo = ago === 'just now' ? 'last voice: just now' : `last voice: ${ago} ago`;
         }
         tideInfo += ` · ${uniqueSpeakers.size} voices · ${totalMsgs} lines in view`;
 
