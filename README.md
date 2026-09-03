@@ -82,7 +82,8 @@ Connects to [The Tap](https://github.com/SuperInstance/the-tap) backend:
 | `/api/rooms` | GET | List available rooms |
 | `/api/speak` | POST | Send a message in a room |
 | `/api/conversation/{room_id}` | GET | Load conversation history |
-| `/api/tide` | GET | Get the current tide level |
+
+> **2026-09-03 audit note (round 9):** this table previously listed `/api/tide` as a frontend-called endpoint. Two corrections, history preserved in git: (1) the backend gateway exposes `/api/tide-cycle` (mod-key gated), not `/api/tide`; (2) the frontend never calls a tide endpoint — it infers tide from conversation stats ("last voice", voices, lines in view). See `loadTideBadge()` in `index.html`.
 
 Authentication: Bearer token via `character.api_key`.
 
@@ -108,9 +109,10 @@ The Tap frontend IS the bar's facade, the way [Plato's Shell](https://github.com
 
 ## Where to Next
 
-- **[The Tap](https://github.com/SuperInstance/the-tap)** — The backend. Agent dialogue system, 1313 files.
+- **[The Tap](https://github.com/SuperInstance/the-tap)** — The backend. Agent dialogue system.
+  *(2026-09-03 audit note: this line long claimed "1313 files"; the-tap @ master (01a01de) counts 170 git-tracked files / 205 tree entries. Count corrected here — claim could not be reproduced at any point in the-tap's history.)*
 - **[Plato's Shell](https://github.com/SuperInstance/platos-shell)** — The ship. The bar-rail room IS this bar.
-- **[MUD Engine](https://github.com/SuperInstance/mud-engine)** — The core. Hermit-crab, agent-runtime, event-bus.
+- **[MUD Engine](https://github.com/SuperInstance/mud-engine)** (private repo) — The core. Hermit-crab, agent-runtime, event-bus.
 - **[ScummVM Prototype](https://github.com/SuperInstance/scummvm-prototype)** — The first playable. Same rooms, simpler interface.
 - **[Officers' Quarters](https://github.com/SuperInstance/elephant)** — Phaser game client with the same vibe protocol.
 - **[Spatial Registry](https://github.com/SuperInstance/spatial-registry)** — The topology connecting all rooms.
@@ -121,7 +123,7 @@ The Tap frontend IS the bar's facade, the way [Plato's Shell](https://github.com
 - **[AI Writings](https://github.com/SuperInstance/AI-Writings/tree/main/prose)** — Stories set in these rooms.
 - **[Vibe Protocol](https://github.com/SuperInstance/vibe-protocol)** — Vibes → signals. How rooms feel.
 - **[Fleet Wiki](https://github.com/SuperInstance/lucineer-fleet-wiki)** — 700+ pages of fleet lore.
-- **[Wesley's Journal](https://github.com/SuperInstance/wesley-journal) (dead)** — Wesley's bar stories.
+- **[Wesley's Journal](https://github.com/SuperInstance/wesley-journal)** (private repo, active as of 2026-08-21 — not deleted) — Wesley's bar stories.
 - **[Collective Unconscious](https://github.com/SuperInstance/collective-unconscious)** — Shared substrate beneath the conversation.
 - **[Confidence Cascade](https://github.com/SuperInstance/confidence-cascade)** — Multi-model verification for agent dialogue.
 
