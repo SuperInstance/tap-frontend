@@ -87,6 +87,8 @@ Connects to [The Tap](https://github.com/SuperInstance/the-tap) backend:
 
 Authentication: Bearer token via `character.api_key`.
 
+> **2026-09-04 audit note (round 19):** re-verified by rerun, not trust — `npm test` 121/121 green; all 16 sibling-repo GitHub links + pages.cloudflare.com confirmed live via `gh api`/curl (mud-engine + wesley-journal still private/active, as booked r9); all four endpoint-table rows still match actual `fetch()` calls in `index.html`; no stale quilt-verilog citations. One cosmetic in-code flag: the `loadTideBadge()` comment says "Try the tide-cycle endpoint" but the code only fetches `/api/conversation/{room}` and infers tide from stats — the r9 booking above remains accurate (no tide endpoint is called).
+
 ---
 
 ## Deployment
